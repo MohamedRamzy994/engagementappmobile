@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">XStudio</string>
+  <string name="app_logo_description"> ستوديو حياتى  </string>
+  <string name="action_fatha">  صور الفاتحة  </string>
+    <string name="action_khtooba">صور الخطوبة</string>
+    <string name="action_mazoon"> صور كتب الكتاب </string>
+    <string name="action_farah"> صور الفرح </string>
+  <string name="action_born"> صور الحمل والولادة </string>
+  <string name="action_honey"> صور شهر العسل </string>
+  <string name="action_home">   الصفحة الرئيسية </string>
+
+
+
+
+
+
+</resources>

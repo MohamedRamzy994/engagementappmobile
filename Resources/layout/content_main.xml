@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:scrollbars="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_alignParentTop="true"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور الفاتحة"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfatha"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/custom_background"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            
+           
+            android:drawableEnd="@drawable/ic_fatha"
+             android:drawableStart="@drawable/ic_fatha"
+            
+             />
+      
+
+       
+
+
+
+    </RelativeLayout>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout1" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain"
+        android:layout_below="@id/space1" 
+        />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/gridViewmain" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_below="@id/space2"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور الخطوبة"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnkhtooba"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:drawableEnd="@drawable/ic_engagement"
+            android:drawableStart="@drawable/ic_engagement"
+               android:background="@drawable/custom_background"
+            android:layout_alignParentStart="true" />
+    
+  
+
+    </RelativeLayout>
+
+        <Space
+        android:id="@+id/space3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain2"
+        android:layout_below="@id/space3" 
+        />
+
+   <Space
+        android:id="@+id/space4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/gridViewmain2" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_below="@id/space4"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور كتب الكتاب"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnktbktab"
+             android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+             android:background="@drawable/custom_background"
+             android:drawableEnd="@drawable/ic_ktbktab"
+               android:drawableStart="@drawable/ic_ktbktab"
+            android:layout_alignParentStart="true" />
+        
+     
+
+    </RelativeLayout>
+
+        <Space
+        android:id="@+id/space5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain3"
+        android:layout_below="@id/space5" 
+        />
+
+      <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_below="@id/gridViewmain3"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور الفرح"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnfarah"
+             android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+             android:drawableEnd="@drawable/ic_farah"
+            android:drawableStart="@drawable/ic_farah"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+              android:background="@drawable/custom_background"
+            android:layout_alignParentStart="true" />
+        
+       
+
+
+
+    </RelativeLayout>
+
+        <Space
+        android:id="@+id/space6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain4"
+        android:layout_below="@id/space6" 
+        />
+
+        <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_below="@id/gridViewmain4"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور شهر العسل"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnhoneymonth"
+             android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+               android:background="@drawable/custom_background"
+             android:drawableEnd="@drawable/ic_honeymonth"
+              android:drawableStart="@drawable/ic_honeymonth"
+            android:layout_alignParentStart="true" />
+     
+
+
+    </RelativeLayout>
+
+        <Space
+        android:id="@+id/space7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain5"
+        android:layout_below="@id/space7" 
+        />
+
+        <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_below="@id/gridViewmain5"
+        android:background="@color/switch_thumb_normal_material_light">
+        <Button
+            android:text="صور الحمل والولادة"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnborn"
+             android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+             android:drawableEnd="@drawable/ic_pregnancy"
+             android:drawableStart="@drawable/ic_pregnancy"
+            android:paddingHorizontal="@dimen/abc_action_bar_icon_vertical_padding_material"
+             android:background="@drawable/custom_background"
+           
+            android:layout_alignParentStart="true" />
+         
+     
+      
+
+
+    </RelativeLayout>
+
+        <Space
+        android:id="@+id/space8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:id="@+id/gridViewmain6"
+        android:layout_below="@id/space8" 
+        />
+
+
+     <Space
+        android:id="@+id/space9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/gridViewmain6" />
+
+</RelativeLayout>

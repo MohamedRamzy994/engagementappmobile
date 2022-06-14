@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_display"
+    android:scrollbars="vertical"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+         android:paddingHorizontal="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:layout_marginTop="@dimen/abc_action_bar_content_inset_with_nav"
+                   android:background="@drawable/custom_background"
+         android:layout_marginHorizontal="@dimen/abc_action_bar_elevation_material">
+        <TextView
+           android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btncatdisplay"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:drawableTint="@color/colorAccent"
+            android:textAlignment="center"/>
+      
+
+
+    </RelativeLayout>
+    <Space
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_content_inset_material"
+        android:layout_below="@id/relativeLayout1" />
+
+ 
+     <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:id="@+id/displaygridview"
+        android:layout_below="@id/space1"
+        
+        />
+   
+        
+   
+   
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    
+     >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/action_home" />
+        <item
+            android:id="@+id/fatha"
+            android:icon="@drawable/ic_fatha"
+            android:title="@string/action_fatha" />
+     
+        <item
+            android:id="@+id/khtooba"
+            android:icon="@drawable/ic_engagement"
+            android:title="@string/action_khtooba" />
+      <item
+           android:id="@+id/ktbtab"
+           android:icon="@drawable/ic_ktbktab"
+           android:title="@string/action_mazoon" />
+      <item
+           android:id="@+id/farah"
+           android:icon="@drawable/ic_farah"
+           android:title="@string/action_farah" />
+      <item
+         android:id="@+id/honeymonth"
+        android:icon="@drawable/ic_honeymonth"
+          android:title="@string/action_honey" />
+      <item
+         android:id="@+id/born"
+        android:icon="@drawable/ic_pregnancy"
+          android:title="@string/action_born" />
+ 
+    </group>
+
+    <item android:title="كن على تواصل معنا">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                 android:icon="@drawable/ic_perm_device_information"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_send"
+                 android:icon="@drawable/ic_call_end"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>
